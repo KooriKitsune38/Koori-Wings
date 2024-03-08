@@ -1,0 +1,28 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "k.flying":{
+                    "min": 0
+                }
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "chest": {
+                        "items": [
+                            "elytra"
+                        ],
+                        "nbt":"{k.Wings:1b}"
+                    }
+                }
+            }
+        }
+    ]
+}
